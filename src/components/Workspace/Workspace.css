@@ -1,0 +1,86 @@
+.InputTextContainer{
+    margin: 15px 30px 25px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.InputTextContainer textarea:last-child{
+    margin-top: 15px;
+}
+
+.fontForInput{
+    font-family: "RobotoLight";
+    font-size: 24px;
+}
+
+.inputTitleArea{
+    box-sizing: border-box;
+}
+
+.inputTextArea{
+    resize: none;
+    box-sizing: border-box;
+    height: 86vh;
+}
+
+@media (max-width: 1300px) {
+    .InputTextContainer{
+        width: 75%;
+    }
+}
+
+@media (max-width: 980px) {
+    .InputTextContainer{
+        width: 70%;
+    }
+
+    .fontForInput{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 700px) {
+    .InputTextContainer{
+        width: 65%;
+    }
+
+    .fontForInput{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 500px) {
+    .InputTextContainer{
+        width: 70%;
+        margin: 15px 15px 25px;
+    }
+
+    .fontForInput{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 420px) {
+    .fontForInput{
+        font-size: 16px;
+    }
+}
+
+@media (max-height: 900px) {
+    .inputTextArea{
+        height: 80vh;
+    }
+}
+
+@media (max-height: 610px) {
+    .inputTextArea{
+        height: 74vh;
+    }
+}
+
+@media (max-height: 470px) {
+    .inputTextArea{
+        height: 68vh;
+    }
+}

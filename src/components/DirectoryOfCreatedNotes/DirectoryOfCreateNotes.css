@@ -1,0 +1,48 @@
+.NotesContainer{
+    width: 20%;
+    overflow-y: auto;
+    max-height: 95vh;
+    border-right:solid 1px gray ;
+}
+
+@media (max-width: 1300px) {
+    .NotesContainer{
+        width: 25%;
+    }
+}
+
+@media (max-width: 980px) {
+    .NotesContainer{
+        width: 30%;
+    }
+}
+
+@media (max-width: 700px) {
+    .NotesContainer{
+        width: 35%;
+    }
+}
+
+@media (max-width: 500px) {
+    .NotesContainer{
+        width: 30%;
+    }
+}
+
+@media (max-height: 900px) {
+    .NotesContainer{
+        max-height: 90vh;
+    }
+}
+
+@media (max-height: 610px) {
+    .NotesContainer{
+        max-height: 85vh;
+    }
+}
+
+@media (max-height: 470px) {
+    .NotesContainer{
+        max-height: 80vh;
+    }
+}

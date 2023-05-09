@@ -1,0 +1,5 @@
+.TableSpaceContainer{
+    display: flex;
+    width: auto;
+    /* flex-direction: row; */
+}
