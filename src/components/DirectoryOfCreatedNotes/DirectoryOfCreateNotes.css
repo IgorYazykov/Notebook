@@ -1,7 +1,7 @@
 .NotesContainer{
     width: 20%;
     overflow-y: auto;
-    max-height: 95vh;
+    max-height: 94vh;
     border-right:solid 1px gray ;
 }
 

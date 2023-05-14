@@ -1,6 +1,7 @@
 .NoteContainer{
-    margin: 15px 20px;
+    padding: 15px 20px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 p {
@@ -20,6 +21,7 @@ p {
 }
 
 .HrOfNotes{
+    margin: 0;
     margin-left: 20px;
 }
 
@@ -43,7 +45,7 @@ p {
     }
 
     .NoteContainer{
-        margin: 13px 17px;
+        padding: 13px 17px;
         overflow: hidden;
     }
 }
@@ -68,7 +70,7 @@ p {
     }
 
     .NoteContainer{
-        margin: 10px 15px;
+        padding: 10px 15px;
         overflow: hidden;
     }
 }

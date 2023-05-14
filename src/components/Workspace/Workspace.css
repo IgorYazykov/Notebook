@@ -1,11 +1,15 @@
 .InputTextContainer{
     margin: 15px 30px 25px;
-    display: flex;
-    flex-direction: column;
     width: 80%;
 }
 
-.InputTextContainer textarea:last-child{
+.InputContainer{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.InputContainer textarea:last-child{
     margin-top: 15px;
 }
 
@@ -14,14 +18,30 @@
     font-size: 24px;
 }
 
+.fontInputTitle{
+    font-family: "Oswald-VariableFont";
+    font-size: 30px;
+}
+
 .inputTitleArea{
     box-sizing: border-box;
+}
+
+.noteDoNotSelected{
+    height: 86vh;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.warningEntry{
+    box-sizing: border-box;
+    white-space: pre-wrap;
 }
 
 .inputTextArea{
     resize: none;
     box-sizing: border-box;
-    height: 86vh;
+    height: 82vh;
 }
 
 @media (max-width: 1300px) {
@@ -45,6 +65,10 @@
         width: 65%;
     }
 
+    .fontInputTitle{
+        font-size: 28px;
+    }
+
     .fontForInput{
         font-size: 22px;
     }
@@ -56,12 +80,20 @@
         margin: 15px 15px 25px;
     }
 
+    .fontInputTitle{
+        font-size: 24px;
+    }
+
     .fontForInput{
         font-size: 18px;
     }
 }
 
 @media (max-width: 420px) {
+    .fontInputTitle{
+        font-size: 22px;
+    }
+
     .fontForInput{
         font-size: 16px;
     }
@@ -71,16 +103,68 @@
     .inputTextArea{
         height: 80vh;
     }
+
+    .noteDoNotSelected{
+        height: 80vh;
+    }
 }
 
-@media (max-height: 610px) {
+@media (max-height: 770px) {
+    .inputTextArea{
+        height: 77vh;
+    }
+
+    .noteDoNotSelected{
+        height: 74vh;
+    }
+}
+
+@media (max-height: 670px) {
     .inputTextArea{
         height: 74vh;
+    }
+
+    .noteDoNotSelected{
+        height: 74vh;
+    }
+}
+
+@media (max-height: 580px) {
+    .inputTextArea{
+        height: 70vh;
+    }
+
+    .noteDoNotSelected{
+        height: 68vh;
+    }
+}
+
+@media (max-height: 510px) {
+    .inputTextArea{
+        height: 68vh;
+    }
+
+    .noteDoNotSelected{
+        height: 68vh;
     }
 }
 
 @media (max-height: 470px) {
     .inputTextArea{
+        height: 64vh;
+    }
+
+    .noteDoNotSelected{
+        height: 68vh;
+    }
+}
+
+@media (max-height: 390px) {
+    .inputTextArea{
+        height: 60vh;
+    }
+
+    .noteDoNotSelected{
         height: 68vh;
     }
 }
