@@ -20,6 +20,18 @@
     width: 26px;
 }
 
+.disable{
+    background-color: lightgrey;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: auto;
+}
+
 @media (max-width: 500px) {
     .ConfigureButton {
         background-color: #fbfbfb;

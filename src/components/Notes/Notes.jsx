@@ -7,14 +7,14 @@ export default function Notes(props) {
 
   function choiseTargetNote () {
     const id = props.id;
-    setTargetNote(id)
-  }
+    setTargetNote(id);
+  };
 
   return (
     <div>
-      <div className="NoteContainer" onClick={choiseTargetNote}>
-        <p>{props.title}</p>
-        <p>{props.discription}</p>
+      <div className="NoteContainer" onClick={ choiseTargetNote }>
+        <p>{ props.title }</p>
+        <p>{ props.discription }</p>
       </div>
       <hr className="HrOfNotes"/>
     </div>

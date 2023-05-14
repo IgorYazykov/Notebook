@@ -7,7 +7,7 @@ export default function ButtonAdd() {
 
   function hendleAdd() {
     handleAddingNote();
-  }
+  };
 
   return (
     <div className="ConfigureButton" onClick={hendleAdd} >

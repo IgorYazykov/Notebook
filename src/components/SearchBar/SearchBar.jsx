@@ -8,11 +8,11 @@ export default function SearchBar() {
 
   function searchText(event) {
     setFilter(event.target.value);
-  }
+  };
 
   return (
     <div className="searchBarContainer">
-      <input className="input searchBar" type="text" placeholder="Search" onChange={searchText}/>
+      <input className="input searchBar" type="text" placeholder="Search" onChange={ searchText }/>
     </div>
   );
 }

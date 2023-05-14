@@ -8,38 +8,48 @@ export default function Workspace() {
     dataOfNotes, 
     targetNote, 
     updateTitle, 
-    updateDiscription 
+    updateDiscription,
+    banOnEdition
   } = useContext(WorkingWithBDContext);
 
   const [targetTitle, setTargetTitle] = useState("");
-  const [targetDiscription, setTargetDiscription] = useState("")
+  const [targetDiscription, setTargetDiscription] = useState("");
 
   useEffect(()=>{
     if(targetNote !== null){
-      setTargetTitle(dataOfNotes[targetNote - 1].title);
-      setTargetDiscription(dataOfNotes[targetNote - 1].discription);
+      dataOfNotes.map((note) => {
+        if (note.id === targetNote) {
+          setTargetTitle(note.title);
+          setTargetDiscription(note.discription);
+          return note;
+        };
+        return note;
+      });
     };
   },[targetNote, dataOfNotes]);
 
   function chengeTitle(event) {
-    updateTitle(event.target.value)
-  }
+    updateTitle(event.target.value);
+  };
 
   function chengeDiscription(event) {
-    updateDiscription(event.target.value)
-  }
+    updateDiscription(event.target.value);
+  };
 
   return (
     <div className="InputTextContainer">
       {
         targetNote === null ? (
           <div className="noteDoNotSelected">
-            <p className="fontForInput warningEntry">First select the post you want to work with</p>
+            <p className="fontForInput warningEntry">
+              First select the post you want to work with
+            </p>
           </div>
         ) : (
           <div className="InputContainer">
             <input 
-              className="inputTitleArea fontForInput input fontInputTitle"  
+              disabled = { banOnEdition }
+              className="inputTitleArea input fontInputTitle border"  
               type="text" 
               id="1"
               onChange={ chengeTitle }
@@ -47,12 +57,13 @@ export default function Workspace() {
               value={targetTitle}
             />
             <textarea 
-              className="inputTextArea fontForInput input" 
+              disabled = { banOnEdition }
+              className="inputTextArea fontForInput input border" 
               name="userText" 
               id="2" 
               onChange={ chengeDiscription }
               placeholder="Enter your text"
-              value={targetDiscription}
+              value={ targetDiscription } 
             />
           </div>
         )

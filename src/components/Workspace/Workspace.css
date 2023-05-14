@@ -44,6 +44,10 @@
     height: 82vh;
 }
 
+.border{
+    border: solid rgb(184, 184, 184) 1px;
+}
+
 @media (max-width: 1300px) {
     .InputTextContainer{
         width: 75%;

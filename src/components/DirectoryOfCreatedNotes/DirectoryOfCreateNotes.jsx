@@ -9,9 +9,9 @@ export default function DirectoryOfCreateNotes() {
   const [filteringArr, setFilteringArr] = useState([]);
 
   useEffect(() => {
-    setFilteringArr(dataOfNotes)
+    setFilteringArr(dataOfNotes);
     setFilteringArr(dataOfNotes.filter((note) => note.title.toLowerCase().includes(filter.toLowerCase())));
-  },[filter, dataOfNotes])
+  },[filter, dataOfNotes]);
 
   return (
 	  <div className="NotesContainer">
